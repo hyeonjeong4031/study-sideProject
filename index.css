@@ -1,0 +1,389 @@
+html, body {
+    font-family: "Elice Digital Baeum",sans-serif;
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#background{
+    width: 100vw; 
+    height: 100vh;
+    background-color: rgba(139, 134, 128, 0.671);
+   
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+
+}
+
+
+  /*헤더  */
+  header p{
+  display: block;
+  height: 30px;
+  float: right;
+  margin-right: 30px;
+  background-color: rgb(3, 3, 3);
+  transition: all 0.5 linear;
+  font-size: small;
+  border-radius: 20px;
+  padding: 0 3px;
+  border: solid 5px black;
+
+}
+header p:hover{
+  background-color: rgb(255, 149, 149);
+  color: black;
+}
+
+  header p a{
+    color: rgb(255, 255, 255);
+  }
+
+header h1{
+  line-height: 200px;
+
+}
+
+  header {
+    display: block;
+    height: 200px;
+    width: 100%;
+    color: rgb(60, 76, 94);
+    text-align: center;
+    padding: 20px 0;
+    background-image: url('./header.png');
+    background-size: cover;
+    font-size: larger;
+
+
+    }
+
+  nav ul{
+    -webkit-align-items: center;
+    align-items:flex-start ;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+
+  }
+
+
+    nav ul li{
+      /* display: block; */
+      height: 100px;
+      width: 24.8%;
+      background-color: black;
+      border-left: solid 1px white; 
+      text-align: center;
+    }
+    
+    nav ul li a{
+      color: aliceblue;
+      display: block;
+      height: 75%;
+      text-align: center;
+      padding: 30px 0 0 0;
+      font-weight: bold;
+      
+      /* transition: background-color 3s linear; */
+      transition: all 0.4s linear;
+      
+      
+    }
+    nav ul li a p{
+      transition: all 0.4s linear;
+
+    }
+
+    nav ul li a p:hover{
+      
+      transform: scale(1.5);
+    }
+    
+    
+    nav ul li a:hover{
+      background-color:rgb(185, 189, 214);
+      color:rgb(39, 31, 31);
+
+}
+ 
+  /* ㅎㅔ더 */
+  /* 메인 */
+  main{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    
+    
+  }
+
+  #explain{
+    width: 100%;
+    height: 550px;
+    display: block;
+    
+   
+    background-image: url('./dna.png');
+    background-size: cover;
+    color: aliceblue;
+    
+  }
+  #explain div{
+    text-align: center;
+    padding:  200px 25% 0 25%;
+    display: block;
+  }
+  .op{
+    background-color: rgba(48, 72, 130, 0.5);
+   
+    
+  }
+
+
+
+
+
+
+  /* part1 섹션1 */
+
+
+
+
+
+ #part1{
+  /* -webkit-flex: 1;
+  flex: 1; */
+  text-align: center;
+  -webkit-align-items: center;
+  align-items:flex-start ;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+ }
+ 
+  #part1 #slider{
+    width: 70%;
+    height: 350px;
+    background-image: url('./pcr.png');
+    background-size: cover;
+    display: flex;
+ 
+  }
+#slider #photo{
+  width: 80%;
+  height: 100%;
+
+}
+#slider #button{
+  width: 20%;
+  height: 100%;
+
+}
+#slider #photo{
+  width: 100%;
+
+}
+
+
+
+
+  #part1 #photo-comment{
+    width: 30%;
+    height: 350px;
+    background-color: rgb(23, 23, 23);
+    color: aliceblue;
+    /* display: flex; */
+    line-height: 350px;
+
+  }
+
+
+
+
+  /* /섹션1 */
+  /* part2 */
+
+  
+  #part2{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  #part2 #techList{
+    width: 100%;
+    height: auto;
+    background-color: rgba(133, 139, 140, 0.54);
+    display: block;
+    padding:20px 0 ;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  
+  #tab-list{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 40px 17%; 
+ 
+  }
+
+  #tab-list li{
+    display: flex;
+    height: 90px;
+    width: 15%;
+    text-align: center;
+    /* background-color: rgb(212, 212, 212); */
+    /* padding-bottom:30px ; */
+    line-height:10px
+    
+  }
+  
+  
+  #tab-list li a:hover{
+    background-color:rgb(200, 229, 255);
+    color:rgb(39, 31, 31);
+    /* scale: 1.2 ; */
+  }
+  
+  
+  #tab-list li a{
+    color:aliceblue;
+    font-weight: bolder;
+    display:block;
+    width: 100%;
+    height: 100%;
+    line-height: 90px;
+    align-items: center;
+    text-align: center;
+    border: solid 3px white;
+    border-radius: 20px;
+   
+    transition: all 0.3s linear;
+  }
+    
+      
+    .box{
+      display: none;
+
+    }
+    div.active{
+      display:block !important;
+    }
+
+    #tab-list li.active{
+      background-color: #bcbcd0 !important;
+      /* padding-right: -10px; */
+      border-radius: 20px;
+      scale: 1.2;
+      /* margin: 0 20px; */
+    }
+    #tab-list li.active a{
+      color:black !important;
+      
+    }
+
+    #techList div.active{
+
+      display: flex;
+      background-color: rgb(187, 189, 193);
+      border-radius: 20px;
+      border: 2px rgb(255, 255, 255) solid;
+      width: 70%;
+      margin: 0 15%;
+      align-items: center;
+      text-align: center;
+     float: center;
+    }
+
+    .list{
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      height: 30px;
+    }
+  
+
+
+    .box .boxform{
+      width: 80%;
+      margin: 0 10%;
+      height: 300px;
+      display: block;
+      background-color: rgb(232, 232, 232);
+      border-radius: 20px;
+    }
+
+    .boxlist{
+      display: flex;
+    
+     
+      -webkit-align-items: center;
+    align-items:flex-start ;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    }
+
+.box div ul li{
+  display: flex; 
+  justify-content: center;
+      -webkit-align-items: center;
+    align-items:flex-start ;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+  
+  
+  
+  
+  
+  /* /part 2 */
+
+/* 섹션3 */
+
+
+
+
+#part3 #comment{
+  width: 100%;
+    height: 250px;
+    background-color: aliceblue ;
+}
+/* /섹션3 */
+
+  /*  /메인*/
+
+  /* 풑터 */
+  footer{
+    display: block;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    color: rgb(112, 112, 112);
+    align-items: center;
+    text-align: center;
+    line-height: 150px;
+ 
+    
+
+  }
+  /* 풑터 */
