@@ -1,16 +1,18 @@
+
+
 html, body {
-    font-family: "Elice Digital Baeum",sans-serif;
-  }
+  font-family: "Elice Digital Baeum",sans-serif;
+}
 *{
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #background{
-    width: 100vw; 
-    height: 100vh;
-    background-color: rgba(139, 134, 128, 0.671);
-   
+  width: 100vw; 
+  height: 100vh;
+  background-color: rgba(139, 134, 128, 0.671);
+  
 }
 
 ul{
@@ -18,12 +20,12 @@ ul{
 }
 a{
   text-decoration: none;
-
+  
 }
 
 
-  /*헤더  */
-  header p{
+/*헤더  */
+header p{
   display: block;
   height: 30px;
   float: right;
@@ -34,91 +36,123 @@ a{
   border-radius: 20px;
   padding: 0 3px;
   border: solid 5px black;
-
+  
 }
 header p:hover{
   background-color: rgb(255, 149, 149);
   color: black;
 }
 
-  header p a{
-    color: rgb(255, 255, 255);
-  }
+header p a{
+  color: rgb(255, 255, 255);
+}
 
 header h1{
   line-height: 200px;
-
+  
 }
 
-  header {
-    display: block;
-    height: 200px;
-    width: 100%;
-    color: rgb(60, 76, 94);
-    text-align: center;
-    padding: 20px 0;
-    background-image: url('./header.png');
-    background-size: cover;
-    font-size: larger;
+header {
+  display: block;
+  height: 200px;
+  width: 100%;
+  color: rgb(60, 76, 94);
+  text-align: center;
+  padding: 20px 0;
+  background-image: url('./header.png');
+  background-size: cover;
+  font-size: larger;
+  
+  
+}
+
+nav ul{
+  -webkit-align-items: center;
+  align-items:flex-start ;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+ 
+  
+}
+main nav{
+  position: sticky;
+  top: 0px;
+  position: -webkit-sticky;
+  background-color: black;
+  
+}
 
 
-    }
+nav ul li{
+  /* display: block; */
+  height: 100px;
+  width: 24.5%;
+  background-color: rgb(17, 17, 22);
+  border-left: solid 1px white; 
+  border-right: solid 1px white; 
+  text-align: center;
+}
 
-  nav ul{
-    -webkit-align-items: center;
-    align-items:flex-start ;
-    -webkit-justify-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    display: flex;
+nav ul li a{
+  color: aliceblue;
+  display: block;
+  height: 75%;
+  text-align: center;
+  padding: 30px 0 0 0;
+  font-weight: bold;
+  
+  /* transition: background-color 3s linear; */
+  transition: all 0.4s linear;
+  
+  
+}
+nav ul li a p{
+  transition: all 0.4s linear;
+  width: 100%;
+  height: 80px%;
+  display: inline-block;
+  
+}
 
+nav ul li a p:hover{
+  
+  transform: scale(1.2);
+}
+
+
+nav ul li a:hover{
+  background-color:rgb(255, 209, 101);
+  color:rgb(39, 31, 31);
+  
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+  #title{
+    font-size: 25px;
   }
 
+  nav ul li{
+    /* border: 1px solid white; */
+   font-size: smaller;
+    height: 60px;
+    width: 22%;
+  }
+  a.navi{
+    padding-top: 9.5%;
+  }
 
-    nav ul li{
-      /* display: block; */
-      height: 100px;
-      width: 24.8%;
-      background-color: black;
-      border-left: solid 1px white; 
-      text-align: center;
-    }
-    
-    nav ul li a{
-      color: aliceblue;
-      display: block;
-      height: 75%;
-      text-align: center;
-      padding: 30px 0 0 0;
-      font-weight: bold;
-      
-      /* transition: background-color 3s linear; */
-      transition: all 0.4s linear;
-      
-      
-    }
-    nav ul li a p{
-      transition: all 0.4s linear;
-
-    }
-
-    nav ul li a p:hover{
-      
-      transform: scale(1.5);
-    }
-    
-    
-    nav ul li a:hover{
-      background-color:rgb(185, 189, 214);
-      color:rgb(39, 31, 31);
+  
 
 }
- 
-  /* ㅎㅔ더 */
-  /* 메인 */
-  main{
-    width: 100%;
-    height: auto;
+
+
+/* ㅎㅔ더 */
+/* 메인 */
+main{
+  width: 100%;
+  height: auto;
     background-color: black;
     
     
@@ -126,18 +160,19 @@ header h1{
 
   #explain{
     width: 100%;
-    height: 550px;
+    min-height: 550px;
+    max-height: 1000px;
     display: block;
     
    
     background-image: url('./dna.png');
     background-size: cover;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     
   }
   #explain div{
     text-align: center;
-    padding:  200px 25% 0 25%;
+    padding:  30% 25% 30% 25%;
     display: block;
   }
   .op{
@@ -145,7 +180,11 @@ header h1{
    
     
   }
-
+@media (min-length: 500px) {
+  #explain div{
+    padding-bottom: 30px;
+  }
+}
 
 
 
@@ -241,9 +280,9 @@ header h1{
   }
 
   #tab-list li{
-    display: flex;
+    /* display: flex; */
     height: 90px;
-    width: 15%;
+    width: 22%;
     text-align: center;
     /* background-color: rgb(212, 212, 212); */
     /* padding-bottom:30px ; */
@@ -308,20 +347,29 @@ header h1{
      float: center;
     }
 
-    .list{
-      color: aliceblue;
+    .active div ul{
       display: flex;
+      align-items:flex-start ;
       justify-content: center;
-      width: 30%;
-      height: 30px;
+    }
+    a.list{
+      width: 150px;
+      height: 50px;
+      display: block;
+      justify-content: space-around;
+      color: aliceblue;
+      border-right: 1px white solid;
+      border-left: 1px white solid;
+
     }
   
 
 
     .box .boxform{
-      width: 80%;
-      margin: 0 10%;
-      height: 300px;
+      width: 99%;
+      /* margin: 0 10%; */
+      border: 2.5px solid rgb(86, 83, 83);
+      height: auto;
       display: block;
       background-color: rgb(232, 232, 232);
       border-radius: 20px;
@@ -340,7 +388,13 @@ header h1{
 
     }
 
-.box div ul li{
+    .boxinfo{
+      margin: 20% 10%;
+    }
+
+/* .box div ul {
+  width: 30%;
+  height: 30px;
   display: flex; 
   justify-content: center;
       -webkit-align-items: center;
@@ -348,10 +402,36 @@ header h1{
     -webkit-justify-content: center;
     justify-content: center;
     flex-wrap: wrap;
+} */
+
+#western{
+  width: 350px;
+  height: 200px;
+  background-image: url('./westernblot.jpg');
+  background-size: cover;
+  justify-content: center;
+}
+#ruci{
+  width: 350px;
+  height: 200px;
+  background-image: url('./lucifer.jpg');
+  background-size: cover;
+  justify-content: center;
 }
 
+#ELISA{
+  width: 350px;
+  height: 200px;
+  background-image: url('./ELISA.png');
+  background-size: cover;
+  justify-content: center;
+}
 
-  
+@media (min-width: 100px) and (max-width: 700px) {
+    #tab-list li{
+      font-size: small;
+    }
+  }
   
   
   
