@@ -82,6 +82,7 @@ main nav{
   position: -webkit-sticky;
   background-color: black;
   
+  z-index: 3;
 }
 
 
@@ -105,7 +106,8 @@ nav ul li a{
   
   /* transition: background-color 3s linear; */
   transition: all 0.4s linear;
-  
+
+
   
 }
 nav ul li a p{
@@ -209,15 +211,20 @@ main{
  }
  
   #part1 #slider{
+
+    /* background-image: url('./pcr.png'); */
+
     width: 70%;
-    height: 350px;
-    background-image: url('./pcr.png');
-    background-size: cover;
-    display: flex;
- 
+    height: 400px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;   
+
+    
   }
-#slider #photo{
-  width: 80%;
+  #slider #slides li{
+  background-size: cover;
+
   height: 100%;
 
 }
@@ -230,7 +237,43 @@ main{
   width: 100%;
 
 }
+/* .slides li:first-child{
+  margin-left: 100px;
+} */
 
+/* 슬라이드들 옆으로 정렬 */
+/* .slides li:not(:last-child){
+  float: left;
+  margin-right: 100px;
+} */
+
+.slides li{
+  float: left;
+}
+
+.controller span{
+  position:absolute;
+  background-color: transparent;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  padding: 10px 20px;
+  top: 50%;
+  font-size: 1.3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+/* span.next{
+  float: right;
+  display: block;
+}
+span.prev{
+  float: left;
+  display: block;
+} */
+
+/* 출처: https://eunhee-programming.tistory.com/106 [코드짜는 문과녀:티스토리] */
 
 
 
@@ -389,7 +432,7 @@ main{
     }
 
     .boxinfo{
-      margin: 20% 10%;
+      margin: 5% 10%;
     }
 
 /* .box div ul {
@@ -405,27 +448,53 @@ main{
 } */
 
 #western{
-  width: 350px;
-  height: 200px;
+  width: 90%;
+  height: 400px;
+ 
   background-image: url('./westernblot.jpg');
   background-size: cover;
   justify-content: center;
 }
 #ruci{
-  width: 350px;
-  height: 200px;
+  width: 90%;
+  height: 450px;
   background-image: url('./lucifer.jpg');
   background-size: cover;
   justify-content: center;
 }
 
 #ELISA{
-  width: 350px;
-  height: 200px;
+  width: 90%;
+  height: 300px;
   background-image: url('./ELISA.png');
   background-size: cover;
   justify-content: center;
 }
+
+#labo{
+  width: 90%;
+  height: 500px;
+  background-image: url('./labo.jpg');
+  background-size: cover;
+  justify-content: center;
+}
+
+#ecg{
+  width: 90%;
+  height: 300px;
+  background-image: url('./ecg.jpg');
+  background-size: cover;
+  justify-content: center;
+}
+
+#WB{
+  width: 80%;
+  height: 500px;
+  background-image: url('./WB.jpg');
+  background-size: cover;
+  justify-content: center;
+}
+
 
 @media (min-width: 100px) and (max-width: 700px) {
     #tab-list li{
